@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html>
 <head>
    <title>Iron Store</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="Assets/CSS/styles.css">
 
 </head>
-<body>
+<body ng-app="storeApp">
    <header>
       <nav class="left-nav">
          <a href="#" class="nav-links"><i class="fa fa-shopping-bag"></i></a>
@@ -15,15 +15,15 @@
       <h1>The Iron Store</h1>
       <nav class="right-nav">
          <a href="#" class="nav-links">About Us</a>
-         <a href="#" class="nav-links"><i class="fa fa-shopping-cart"></i></a>
+         <a href="#Cart" class="nav-links"><i class="fa fa-shopping-cart"></i></a>
          <a href="#" class="nav-links"><i class="fa fa-bars"></i></a>
       </nav>
    </header>
-   <div class="left-column">
+   <div class="left-column" ng-view>
 
    </div>
    <div class="right-column">
-      
+
    </div>
 
 
