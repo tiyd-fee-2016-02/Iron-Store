@@ -16,30 +16,21 @@ header {
   font-size: 2em;
   text-align: center;
   padding: 1.5em;
-  background-color: #59ABE3; }
-  header h1 {
-    display: inline-block; }
+  background-color: #59ABE3;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between; }
   header .right-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
+    font-size: 0.7em; }
   header .left-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
+    font-size: 0.7em; }
 
 footer {
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
   padding: 1.5em;
-  background-color: #59ABE3; }
-  footer .right-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-  footer .left-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
+  background-color: #59ABE3;
+  display: flex;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=styles.css.map */

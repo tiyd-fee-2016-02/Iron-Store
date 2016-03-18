@@ -34,35 +34,31 @@ header {
    text-align: center;
    padding: 1.5em;
    background-color: $primary-color;
+   display: inline-block;
+   display: flex;
+   justify-content: space-between;
    h1{
-      display: inline-block;
    }
    .right-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+      font-size: 0.7em;
    }
    .left-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+      font-size: 0.7em;
    }
 }
 
 footer {
-   font-size: 2em;
+   font-size: 1em;
    text-align: center;
    padding: 1.5em;
    background-color: $primary-color;
+   display: flex;
+   justify-content: space-between;
    .right-nav{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+
    }
    .left-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+
    }
 
 }
