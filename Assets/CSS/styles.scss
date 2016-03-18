@@ -1,0 +1,68 @@
+$background-color: #eee;
+$font-family: 'Helvetica', sans-serif;
+$primary-color: #59ABE3;
+$secondary-color: #E74C3C;
+$font-color: #22313F;
+
+//Styles for all the content:
+
+html {
+   font-family: $font-family;
+   background-color: $background-color;
+   font-size: 1em;
+   color: $font-color;
+}
+
+body {
+
+   .nav-links {
+      text-decoration: none;
+      color: $font-color;
+   }
+   .nav-links:hover{
+      text-decoration: underline;
+   }
+   a {
+      padding: 0 0.5em;
+   }
+}
+
+//styles for header
+
+header {
+   font-size: 2em;
+   text-align: center;
+   padding: 1.5em;
+   background-color: $primary-color;
+   h1{
+      display: inline-block;
+   }
+   .right-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+   }
+   .left-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+   }
+}
+
+footer {
+   font-size: 2em;
+   text-align: center;
+   padding: 1.5em;
+   background-color: $primary-color;
+   .right-nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+   }
+   .left-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+   }
+
+}

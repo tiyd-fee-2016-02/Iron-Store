@@ -1,0 +1,45 @@
+html {
+  font-family: "Helvetica", sans-serif;
+  background-color: #eee;
+  font-size: 1em;
+  color: #22313F; }
+
+body .nav-links {
+  text-decoration: none;
+  color: #22313F; }
+body .nav-links:hover {
+  text-decoration: underline; }
+body a {
+  padding: 0 0.5em; }
+
+header {
+  font-size: 2em;
+  text-align: center;
+  padding: 1.5em;
+  background-color: #59ABE3; }
+  header h1 {
+    display: inline-block; }
+  header .right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  header .left-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+
+footer {
+  font-size: 2em;
+  text-align: center;
+  padding: 1.5em;
+  background-color: #59ABE3; }
+  footer .right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  footer .left-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+
+/*# sourceMappingURL=styles.css.map */
