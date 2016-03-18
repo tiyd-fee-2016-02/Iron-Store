@@ -21,8 +21,8 @@ storeApp.config(['$routeProvider', function($routeProvider) {
       controller: 'DetailsViewController'
     })
     .when('/Cart', {
-       templateUrl: 'Partials/cart.html',
-        controller: 'CartViewController'
+      templateUrl: 'Partials/cart.html',
+      controller: 'CartViewController'
     })
     .when('/Receipt', {
       templateUrl: 'Partials/receipt.html',

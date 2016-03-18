@@ -1,28 +1,10 @@
-<div class = "product-card">
-  {{message}}
-   <!-- <div class = "details-name">{{name}}</div>
-   <div class = "detials-price">{{price | currency}}</div>
-   <div class = "details-description">{{description}}</div>
-   <div class = "details-reviews">{{reviews}}</div> -->
-</div>
-
-<div class = "product-card">
-   <!-- <div class = "details-name">{{name}}</div>
-   <div class = "detials-price">{{price | currency}}</div>
-   <div class = "details-description">{{description}}</div>
-   <div class = "details-reviews">{{reviews}}</div> -->
-</div>
-
-<div class = "product-card">
-   <!-- <div class = "details-name">{{name}}</div>
-   <div class = "detials-price">{{price | currency}}</div>
-   <div class = "details-description">{{description}}</div>
-   <div class = "details-reviews">{{reviews}}</div> -->
-</div>
-
-<div class = "product-card">
-   <!-- <div class = "details-name">{{name}}</div>
-   <div class = "detials-price">{{price | currency}}</div>
-   <div class = "details-description">{{description}}</div>
-   <div class = "details-reviews">{{reviews}}</div> -->
+<h1>{{message}}</h1><!-- test messagae -->
+<br>
+<div class = "product-card" ng-repeat="product in products">
+   <div class = "details-name">{{product.name}}</div>
+   <div class = "detials-price">{{product.price}}</div>
+   <div class = "details-description">{{product.description}}</div>
+   <div class = "detials-image">{{product.image}}</div>
+   <div class = "details-reviews" ng-repeat="review in product.reviews">{{review}}</div>
+   <br>
 </div>
