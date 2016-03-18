@@ -1,139 +1,113 @@
 {
-   "products": [{
-      "name": "Gneiss",
-      "price": "4.5",
-      "description": "This metamorphic rock is hard and wavy and cool",
-      "image": "http://www.sciencekids.co.nz/images/pictures/earth/metamorphicrock.jpg",
-      "reviews": [{
-         "author": "ExcitedRockGuy",
-         "review": "This rock is boring",
-         "rating": "1"
-         },
-         {
-         "author": "BoringRockGuy",
-         "review": "I think this rock is the best",
-         "rating": "5"
-         },
-         {
-         "author": "Ben Hur",
-         "review": "Rock is good",
-         "rating": "4"
-         },
-         {
-         "author": "Sensitive Nose",
-         "review": "This rock smells funny",
-         "rating": "2"
-         }
-         ]
-
-   }, {
-      "name": "Dwayne Johnson",
-      "price": "45",
-      "description": "A good cook",
-      "image": "http://nerdist.com/wp-content/uploads/2015/06/Dwayne-Johnson.jpg",
-      "reviews": [
-         {
-         "author": "ExcitedRockGuy",
-         "review": "This is The Rock I came here to see!",
-         "rating": "5"
-         },
-         {
-         "author": "BoringRockGuy",
-         "review": "What does he have to do with minerals?",
-         "rating": "1"
-         },
-         {
-         "author": "Ben Hur",
-         "review": "Rock is rock",
-         "rating": "4"
-         },
-         {
-         "author": "Sensitive",
-         "review": "This rock smells when he's cooking",
-         "rating": "2"
-         }
-      ]
-   }, {
-      "name": "Obsidian",
-      "price": "4",
-      "description": "This igneous rock is extremely sharp",
-      "image": "http://www.universetoday.com/wp-content/uploads/2009/05/600px-obsidianoregon.jpg",
-      "reviews":[
-         {
-         "author": "Rock Knapper",
-         "review": "Obsidian is my favorite",
-         "rating": "5"
-         },
-         {
-         "author": "BoringRockGuy",
-         "review": "I love a good igneous",
-         "rating": "3"
-         },
-         {
-         "author": "Ben Hur",
-         "review": "Sharp rock is sharp",
-         "rating": "4"
-         },
-         {
-         "author": "Aztec",
-         "review": "Makes good knives, would use again",
-         "rating": "2"
-         }
-      ]
-   }, {
-      "name": "Clothes Iron",
-      "price": "25",
-      "description": "Uses steam to Iron clothes",
-      "image": "http://www.vapor-systems.com/images/products/digital_velocity/reliable-digital-velocity-steam-iron-1.gif",
-      "reviews":[
-         {
-         "author": "Iron Fan",
-         "review": "Let me tell you why this Iron is awesome. It's great. It makes steam, and the wrinkles leave the clothes. It's super fantastic.",
-         "rating": "5"
-         },
-         {
-         "author": "BoringRockGuy",
-         "review": "Wait, what am I doing on this site?",
-         "rating": "1"
-         },
-         {
-         "author": "Ben Hur",
-         "review": "Where plug go?",
-         "rating": "0"
-         },
-         {
-         "author": "Mom",
-         "review": "Here, Greg, this is for you!",
-         "rating": "5"
-         }
-      ]
-   }, {
-      "name": "Green Iron",
-      "price": "35",
-      "description": "In darkest day, in brightest light, let the Green Iron press all the clothes",
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/uIsF462AVoWKLcMf.large",
-      "reviews":[
-         {
-         "author": "Iron Fan",
-         "review": "Blue Iron Best Iron. Boo Green Iron",
-         "rating": "1"
-         },
-         {
-         "author": "BoringRockGuy",
-         "review": "Nothing to do with rocks",
-         "rating": "1"
-         },
-         {
-         "author": "Ben Hur",
-         "review": "Steam maker doesn't make a good cup of tea. Takes too long.",
-         "rating": "0"
-         },
-         {
-         "author": "Mom",
-         "review": "Have you ironed yet today?",
-         "rating": "5"
-         }
-      ]
-   }
-   ]
+	"products": [{
+		"name": "Gneiss",
+		"price": "4.5",
+		"description": "This metamorphic rock is hard and wavy and cool",
+		"image": "www.sciencekids.co.nz/images/pictures/earth/metamorphicrock.jpg",
+		"reviews": [{
+			"author": "ExcitedRockGuy",
+			"review": "This rock is boring",
+			"rating": "1"
+		}, {
+			"author": "BoringRockGuy",
+			"review": "I think this rock is the best",
+			"rating": "5"
+		}, {
+			"author": "Ben Hur",
+			"review": "Rock is good",
+			"rating": "4"
+		}, {
+			"author": "Sensitive Nose",
+			"review": "This rock smells funny",
+			"rating": "2"
+		}]
+	}, {
+		"name": "Dwayne Johnson",
+		"price": "45",
+		"description": "A good cook",
+		"image": "nerdist.com/wp-content/uploads/2015/06/Dwayne-Johnson.jpg",
+		"reviews": [{
+			"author": "ExcitedRockGuy",
+			"review": "This is The Rock I came here to see!",
+			"rating": "5"
+		}, {
+			"author": "BoringRockGuy",
+			"review": "What does he have to do with minerals?",
+			"rating": "1"
+		}, {
+			"author": "Ben Hur",
+			"review": "Rock is rock",
+			"rating": "4"
+		}, {
+			"author": "Sensitive",
+			"review": "This rock smells when he's cooking",
+			"rating": "2"
+		}]
+	}, {
+		"name": "Obsidian",
+		"price": "4",
+		"description": "This igneous rock is extremely sharp",
+		"image": "www.universetoday.com/wp-content/uploads/2009/05/600px-obsidianoregon.jpg",
+		"reviews": [{
+			"author": "Rock Knapper",
+			"review": "Obsidian is my favorite",
+			"rating": "5"
+		}, {
+			"author": "BoringRockGuy",
+			"review": "I love a good igneous",
+			"rating": "3"
+		}, {
+			"author": "Ben Hur",
+			"review": "Sharp rock is sharp",
+			"rating": "4"
+		}, {
+			"author": "Aztec",
+			"review": "Makes good knives, would use again",
+			"rating": "2"
+		}]
+	}, {
+		"name": "Clothes Iron",
+		"price": "25",
+		"description": "Uses steam to Iron clothes",
+		"image": "www.vapor-systems.com/images/products/digital_velocity/reliable-digital-velocity-steam-iron-1.gif",
+		"reviews": [{
+			"author": "Iron Fan",
+			"review": "Let me tell you why this Iron is awesome. It's great. It makes steam, and the wrinkles leave the clothes. It's super fantastic.",
+			"rating": "5"
+		}, {
+			"author": "BoringRockGuy",
+			"review": "Wait, what am I doing on this site?",
+			"rating": "1"
+		}, {
+			"author": "Ben Hur",
+			"review": "Where plug go?",
+			"rating": "0"
+		}, {
+			"author": "Mom",
+			"review": "Here, Greg, this is for you!",
+			"rating": "5"
+		}]
+	}, {
+		"name": "Green Iron",
+		"price": "35",
+		"description": "In darkest day, in brightest light, let the Green Iron press all the clothes",
+		"image": "d3nevzfk7ii3be.cloudfront.net/igi/uIsF462AVoWKLcMf.large",
+		"reviews": [{
+			"author": "Iron Fan",
+			"review": "Blue Iron Best Iron. Boo Green Iron",
+			"rating": "1"
+		}, {
+			"author": "BoringRockGuy",
+			"review": "Nothing to do with rocks",
+			"rating": "1"
+		}, {
+			"author": "Ben Hur",
+			"review": "Steam maker doesn't make a good cup of tea. Takes too long.",
+			"rating": "0"
+		}, {
+			"author": "Mom",
+			"review": "Have you ironed yet today?",
+			"rating": "5"
+		}]
+	}]
 }
