@@ -4,7 +4,7 @@
    <div class = "details-name">{{product.name}}</div>
    <div class = "detials-price">{{product.price}}</div>
    <div class = "details-description">{{product.description}}</div>
-   <div class = "detials-image">{{product.image}}</div>
+   <div class = "detials-image"><img src='http://{{product.image}}'></div>
    <div class = "details-reviews" ng-repeat="review in product.reviews">{{review}}</div>
    <br>
 </div>
