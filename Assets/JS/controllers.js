@@ -17,7 +17,7 @@ storeApp.controller('ProductViewController', ['$http', '$scope', function($http,
 }]);
 
 storeApp.controller('DetailsViewController', function($scope) {
-
+	
 	$scope.message = 'This is the details content';
 
 });
