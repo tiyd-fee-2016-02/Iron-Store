@@ -1,15 +1,16 @@
 <h1>{{message}}</h1><!-- test messagae -->
 <br>
 <div class="product-card" ng-repeat="product in products">
-   <div class="details-name">{{product[$index].name}}</div>
-   <div class="detials-price">{{product[$index].price}}</div>
-   <div class="details-description">{{product[$index].description}}</div>
-   <div class="detials-image"><img width="150px" height="100px" src='{{product[$index].image}}'></div>
-   <div class="details-reviews" ng-repeat="review in product[$parent.$index].reviews">
-     <div>{{review[$index].author}}</div>
-     <div>{{review[$index].review}}</div>
-     <div>{{review[$index].rating}}</div>
+   <div class="details-name">{{product.name}}</div>
+   <div class="detials-price">{{product.price}}</div>
+   <div class="details-description">{{product.description}}</div>
+   <div class="detials-image"><img width="150px" height="100px" src='{{product.image}}'></div>
+   <br>
+   <div class="details-reviews" ng-repeat="review in product.reviews">
+     <br>
+     <div>{{review.author}}</div>
+     <div>{{review.rating}}</div>
+     <div>{{review.review}}</div>
    </div>
    <br>
-   <div>{{product[$index].reviews}}</div>
 </div>
