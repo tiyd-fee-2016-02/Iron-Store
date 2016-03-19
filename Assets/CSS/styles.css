@@ -33,4 +33,26 @@ footer {
   display: flex;
   justify-content: space-between; }
 
+.column-container {
+  margin: auto;
+  margin-left: 10%;
+  display: inline-block; }
+
+.product-card {
+  border: 1px solid red;
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #22313F; }
+  .product-card .details-name {
+    font-size: 2em;
+    margin-top: 1em; }
+  .product-card .details-price {
+    font-size: 1.5em;
+    margin-top: 0.5em; }
+  .product-card .details-description {
+    font-size: 1em;
+    margin-top: 0.5em; }
+
 /*# sourceMappingURL=styles.css.map */

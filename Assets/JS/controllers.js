@@ -15,11 +15,19 @@ storeApp.controller('ProductViewController', ['$http', '$scope', function($http,
 
 }]);
 
-storeApp.controller('DetailsViewController', function($scope) {
+storeApp.controller('DetailsViewController', ['$http', '$scope', function($http, $scope) {
 
 	$scope.message = 'This is the details content';
+	$http.get('Assets/iron-store.json')
+		.success(function (data) {
+			console.log("Success!", data);
+			$scope.products = data;
+		})
+   .error(function (data) {
+      console.log('There was an error!', data);
+		});
 
-});
+}]);
 
 storeApp.controller('CartViewController', function($scope) {
 
