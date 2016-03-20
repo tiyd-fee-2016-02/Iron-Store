@@ -1,23 +1,22 @@
-<img src="">
-<!-- <div class = "details-name">{{name}}</div>
-<div class = "detials-price">{{price | currency}}</div>
-<div class = "details-description">{{description}}</div>
-<div class = "details-reviews">{{reviews}}</div> -->
 {{message}}
-<div class="product-card">
-   <div class="details-image"><img width="150px" height="100px" src='{{product[0].image}}'></div>
-   <div class="details-name">{{product[0].name}}</div>
-   <div class="details-price">{{product[0].price | currency}}</div>
-   <div class="details-description">{{product[0].description}}</div>
-
-   <br>
-   <div class="details-reviews" ng-repeat="review in product.reviews">
-    <br>
-    <div>{{review.author}}</div>
-    <div>Stars: {{review.rating}}</div>
-    <div>{{review.review}}</div>
+  <div class="product-card" ng-model="products">
+  <!-- <div class="product-card" ng-repeat="product in products"> -->
+  <!-- <div class="product-card" ng-repeat="product in products | filter:{'productID': 0}:true}"> -->
+   <div class="product-card-detail-container">
+     <div class="details-image"><img src='{{products[productID].image}}'></div>
+     <div class="details-name">{{products[productID].name}} ({{productID}})</div>
+     <div class="details-price">{{products[productID].price | currency}}</div>
+     <div class="details-description">{{products[productID].description}}</div>
+     <br>
+     <div class="details-reviews" ng-repeat="review in products[productID].reviews">
+       <br>
+       <div>{{review.author}}</div>
+       <div>Stars: {{review.rating}}</div>
+       <div>{{review.review}}</div>
+     </div>
+     <br>
    </div>
-
-   <a href="#ProductView"><button class = "details-back">Back to Items</button></a>
-   <a href="#Cart"><button class = "details-card">Add to Cart</button></a>
+  </div>
+  <a href="#ProductView"><button class = "details-back">Back to Items</button></a>
+  <a href="#Cart"><button class = "details-card">Add to Cart</button></a>
 </div>

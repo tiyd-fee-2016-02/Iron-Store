@@ -16,7 +16,7 @@ storeApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'Partials/product-view.html',
       controller: 'ProductViewController'
     })
-    .when('/Details', {
+    .when('/Details/:productID', {
       templateUrl: 'Partials/details.html',
       controller: 'DetailsViewController'
     })

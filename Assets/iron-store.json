@@ -1,5 +1,6 @@
 [
   {
+    "productID" : "0",
 		"name": "Gneiss",
 		"price": "4.5",
 		"description": "This metamorphic rock is hard and wavy and cool",
@@ -29,6 +30,7 @@
     ]
 	},
   {
+    "productID" : "1",
 		"name": "Dwayne Johnson",
 		"price": "45",
 		"description": "A good cook",
@@ -58,6 +60,7 @@
     ]
   },
   {
+    "productID" : "2",
 		"name": "Obsidian",
 		"price": "4",
 		"description": "This igneous rock is extremely sharp",
@@ -87,6 +90,7 @@
     ]
 	},
   {
+    "productID" : "3",
 		"name": "Clothes Iron",
 		"price": "25",
 		"description": "Uses steam to Iron clothes",
@@ -116,6 +120,7 @@
     ]
 	},
   {
+    "productID" : "4",
 		"name": "Green Iron",
 		"price": "35",
 		"description": "In darkest day, in brightest light, let the Green Iron press all the clothes",
@@ -143,5 +148,35 @@
   			"rating": "5"
 		  }
     ]
-	}
+	},
+  {
+    "productID" : "5",
+		"name": "Dwayne Johnson",
+		"price": "45",
+		"description": "A good cook",
+		"image": "http://www.nerdist.com/wp-content/uploads/2015/06/Dwayne-Johnson.jpg",
+		"reviews":
+    [
+      {
+  			"author": "ExcitedRockGuy",
+  			"review": "This is The Rock I came here to see!",
+  			"rating": "5"
+  		},
+      {
+  			"author": "BoringRockGuy",
+  			"review": "What does he have to do with minerals?",
+  			"rating": "1"
+  		},
+      {
+  			"author": "Ben Hur",
+  			"review": "Rock is rock",
+  			"rating": "4"
+  		},
+      {
+  			"author": "Sensitive",
+  			"review": "This rock smells when he's cooking",
+  			"rating": "2"
+  		}
+    ]
+  }
 ]

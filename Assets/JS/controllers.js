@@ -1,7 +1,6 @@
 // Controllers
 storeApp.controller('ProductViewController', ['$http', '$scope', function($http, $scope) {
-
-	// $http.get('http://localhost:3000/products')
+	// $scope.message = 'This is the product view content';
 	$http.get('Assets/iron-store.json')
 		.success(function (data) {
 			console.log("Success!", data);
@@ -10,24 +9,19 @@ storeApp.controller('ProductViewController', ['$http', '$scope', function($http,
    .error(function (data) {
       console.log('There was an error!', data);
 		});
-
-	$scope.message = 'This is the product view content';
-
-
 }]);
 
-storeApp.controller('DetailsViewController', ['$http', '$scope', function($http, $scope) {
-
-	$scope.message = 'This is the details content';
+storeApp.controller('DetailsViewController', ['$scope','$http', '$routeParams', function($scope, $http, $routeParams) {
+	// $scope.message = 'This is the details content';
 	$http.get('Assets/iron-store.json')
 		.success(function (data) {
 			console.log("Success!", data);
 			$scope.products = data;
+			$scope.productID = $routeParams.productID;
 		})
    .error(function (data) {
       console.log('There was an error!', data);
 		});
-
 }]);
 
 storeApp.controller('CartViewController', function($scope) {
