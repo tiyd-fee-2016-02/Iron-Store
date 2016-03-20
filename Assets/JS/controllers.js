@@ -14,12 +14,14 @@ storeApp.controller('ProductViewController', ['$http', '$scope', function($http,
 	$scope.message = 'This is the product view content';
 
 
+
 }]);
 
 storeApp.controller('DetailsViewController', ['$http', '$scope', function($http, $scope) {
 
+	
 	$scope.message = 'This is the details content';
-	$http.get('Assets/iron-store.json')
+	$http.get('Assets/iron-store/.json')
 		.success(function (data) {
 			console.log("Success!", data);
 			$scope.products = data;
@@ -27,6 +29,7 @@ storeApp.controller('DetailsViewController', ['$http', '$scope', function($http,
    .error(function (data) {
       console.log('There was an error!', data);
 		});
+
 
 }]);
 

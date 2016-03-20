@@ -91,3 +91,36 @@ footer {
       margin-top: 0.5em;
    }
 }
+
+//styling for details page
+
+.details-card {
+}
+
+.details-image {
+   width: 300px;
+}
+
+.button {
+   background-color: $secondary-color;
+   border: 3px solid $secondary-color;
+   border-radius: 3px;
+   color: $font-color;
+   margin-bottom: 1em;
+}
+
+//styline for cart page:
+
+.cart-nav {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 1em;
+}
+
+.cart-list {
+   margin-left: 2em;
+}
+
+.close {
+   padding: 0.2em;
+}

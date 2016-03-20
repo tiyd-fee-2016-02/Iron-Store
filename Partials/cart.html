@@ -1,14 +1,15 @@
 {{message}}
 
 <ul class = "cart-nav">
-   <li>Quantity</li>
-   <li>Name</li>
-   <li>Price</li>
-   <li>X</li>
+   <li class = "cart-list">Quantity</li>
+   <li class = "cart-list">Name {{Name}}</li>
+   <li class = "cart-list">Price {{price}}</li>
+   <li class = "cart-list">Total {{price * quantity}}</li>
+   <li class = "cart-list close button">X</a>
 </ul>
 <ul>
-   <!-- <li>{{quantity}}</li>
+   <li>{{quantity}}</li>
    <li>{{name}}</li>
-   <li>{{price | currency}}</li> -->
-   <li>X</li>
+   <li>{{price | currency}}</li>
+   <li></li>
 </ul>

@@ -1,3 +1,5 @@
 Assets/CSS/styles.css.map
 db.json
 .gitignore
+.sass-cache
+styles.css.map

@@ -55,4 +55,25 @@ footer {
     font-size: 1em;
     margin-top: 0.5em; }
 
+.details-image {
+  width: 300px; }
+
+.button {
+  background-color: #E74C3C;
+  border: 3px solid #E74C3C;
+  border-radius: 3px;
+  color: #22313F;
+  margin-bottom: 1em; }
+
+.cart-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em; }
+
+.cart-list {
+  margin-left: 2em; }
+
+.close {
+  padding: 0.2em; }
+
 /*# sourceMappingURL=styles.css.map */

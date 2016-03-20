@@ -4,20 +4,20 @@
 <div class = "details-description">{{description}}</div>
 <div class = "details-reviews">{{reviews}}</div> -->
 {{message}}
-<div class="product-card">
+<div class="details-card">
    <div class="details-image"><img width="150px" height="100px" src='{{product[0].image}}'></div>
-   <div class="details-name">{{product[0].name}}</div>
-   <div class="details-price">{{product[0].price | currency}}</div>
-   <div class="details-description">{{product[0].description}}</div>
+   <div class="details-name">name{{product[0].name}}</div>
+   <div class="details-price">price{{product[0].price | currency}}</div>
+   <div class="details-description">description{{product[0].description}}</div>
 
    <br>
    <div class="details-reviews" ng-repeat="review in product.reviews">
     <br>
-    <div>{{review.author}}</div>
+    <div>review{{review.author}}</div>
     <div>Stars: {{review.rating}}</div>
-    <div>{{review.review}}</div>
+    <div>review{{review.review}}</div>
    </div>
 
-   <a href="#ProductView"><button class = "details-back">Back to Items</button></a>
-   <a href="#Cart"><button class = "details-card">Add to Cart</button></a>
+   <a href="#ProductView"><button class = "details-back button">Back to Items</button></a>
+   <a href="#Cart"><button class = "details-card button">Add to Cart</button></a>
 </div>
