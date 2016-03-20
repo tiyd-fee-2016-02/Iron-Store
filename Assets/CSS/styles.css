@@ -78,4 +78,37 @@ footer {
   font-size: 1em;
   margin-top: 0.5em; }
 
+.cart-product-container {
+  border: 1px solid #22313F;
+  border-radius: 10px;
+  margin: 25px 0 0 25px;
+  padding: 5px; }
+
+.cart-image {
+  padding-right: 2em;
+  vertical-align: middle; }
+  .cart-image img {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #22313F;
+    border-radius: 5px;
+    vertical-align: middle; }
+
+.cart-quantity {
+  padding-left: 10px;
+  padding-right: 2em;
+  vertical-align: middle; }
+
+.cart-name {
+  padding-right: 2em;
+  vertical-align: middle; }
+
+.cart-description {
+  padding-right: 2em;
+  vertical-align: middle; }
+
+.cart-price {
+  padding-right: 2em;
+  vertical-align: middle; }
+
 /*# sourceMappingURL=styles.css.map */

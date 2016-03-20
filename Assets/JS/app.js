@@ -2,16 +2,15 @@
 var storeApp = angular.module('storeApp', ['ngRoute']);
 
 // Routing
-// ProductView -> template product-view.html and Controller ProductViewController
-// Details -> template details.html and Controller DetailsViewController
-// Cart -> template details.html and Controller CartViewController
+// ProductView -> partial product-view.html and Controller ProductViewController
+// Details -> partial details.html and Controller DetailsViewController
+// Cart -> partial cart.html and Controller CartViewController - Empty Cart
+// Cart/:productID ->
+// Cart/Update/:productID ->
+// Cart/Remove/:productID ->
 // Receipt -> template details.html and Controller ReceiptViewController
 storeApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    // .when('/', {
-    //   templateUrl: 'index.html',
-    //   controller: 'ProductViewController'
-    // })
     .when('/ProductView', {
       templateUrl: 'Partials/product-view.html',
       controller: 'ProductViewController'
@@ -21,6 +20,18 @@ storeApp.config(['$routeProvider', function($routeProvider) {
       controller: 'DetailsViewController'
     })
     .when('/Cart', {
+      templateUrl: 'Partials/cart.html',
+      controller: 'CartViewController'
+    })
+    .when('/Cart/:productID', {
+      templateUrl: 'Partials/cart.html',
+      controller: 'CartViewController'
+    })
+    .when('/Cart/Update/:productID', {
+      templateUrl: 'Partials/cart.html',
+      controller: 'CartViewController'
+    })
+    .when('/Cart/Remove/:productID', {
       templateUrl: 'Partials/cart.html',
       controller: 'CartViewController'
     })

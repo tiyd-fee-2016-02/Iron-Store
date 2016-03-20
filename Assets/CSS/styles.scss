@@ -3,6 +3,7 @@ $font-family: 'Helvetica', sans-serif;
 $primary-color: #59ABE3;
 $secondary-color: #E74C3C;
 $font-color: #22313F;
+$cart-right-padding: 2em;
 
 //Styles for all the content:
 
@@ -96,11 +97,13 @@ footer {
    }
 }
 
-.details-image img {
-  width: 150px;
-  height: 100px;
-  border: 1px solid $font-color;
-  border-radius: 5px;
+.details-image {
+  img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid $font-color;
+    border-radius: 5px;
+  }
 }
 
 .details-name {
@@ -114,4 +117,48 @@ footer {
 .details-description {
   font-size: 1em;
   margin-top: 0.5em;
+}
+
+// cart styles
+
+@mixin padding-right($value) {
+  padding-right: $value;
+  vertical-align: middle;
+}
+
+
+
+.cart-product-container {
+  border: 1px solid $font-color;
+  border-radius: 10px;
+  margin: 25px 0 0 25px;
+  padding: 5px;
+}
+
+.cart-image {
+  @include padding-right($cart-right-padding);
+  img {
+    width: 60px;
+    height: 40px;
+    border: 1px solid $font-color;
+    border-radius: 5px;
+    vertical-align: middle;
+  }
+}
+
+.cart-quantity {
+  padding-left: 10px;
+  @include padding-right($cart-right-padding);
+}
+
+.cart-name {
+  @include padding-right($cart-right-padding);
+}
+
+.cart-description {
+  @include padding-right($cart-right-padding);
+}
+
+.cart-price {
+  @include padding-right($cart-right-padding);
 }

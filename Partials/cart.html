@@ -1,14 +1,13 @@
 {{message}}
-
-<ul class = "cart-nav">
-   <li>Quantity</li>
-   <li>Name</li>
-   <li>Price</li>
-   <li>X</li>
-</ul>
-<ul>
-   <!-- <li>{{quantity}}</li>
-   <li>{{name}}</li>
-   <li>{{price | currency}}</li> -->
-   <li>X</li>
+<!-- <br> -->
+<ul class="cart-product-container">
+   <li class="cart-product">
+      <span class="cart-quantity"><input name="cart-product-quantity-{{productID}}" type="text" placeholder="Qty" size="3" maxlength="3"></input></span>
+      <span class="cart-image"><img src='{{products[productID].image}}'></span>
+      <span class="cart-name">{{products[productID].name}} ({{productID}})</span>
+      <span class="cart-description">{{products[productID].description}}</span>
+      <span class="cart-price">{{products[productID].price | currency}}</span>
+      <span class="cart-update-btn-wrapper"><a href="#Cart/Update/{{productID}}"><button name="cart-update-btn-{{productID}}" class="cart-update-btn">Update</button></a></span>
+      <span class="cart-remove-btn-wrapper"><a href="#Cart/Remove/{{productID}}"><button name="cart-remove-btn-{{productID}}" class="cart-remove-btn">Remove</button></a></span>
+   </li>
 </ul>
