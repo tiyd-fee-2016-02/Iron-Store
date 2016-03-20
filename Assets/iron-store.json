@@ -3,6 +3,7 @@
     "productID" : "0",
 		"name": "Gneiss",
 		"price": "4.5",
+    "cartQty": "1",
 		"description": "This metamorphic rock is hard and wavy and cool",
 		"image": "http://www.sciencekids.co.nz/images/pictures/earth/metamorphicrock.jpg",
 		"reviews":
@@ -33,6 +34,7 @@
     "productID" : "1",
 		"name": "Dwayne Johnson",
 		"price": "45",
+    "cartQty": "1",
 		"description": "A good cook",
 		"image": "http://www.nerdist.com/wp-content/uploads/2015/06/Dwayne-Johnson.jpg",
 		"reviews":
@@ -63,6 +65,7 @@
     "productID" : "2",
 		"name": "Obsidian",
 		"price": "4",
+    "cartQty": "1",
 		"description": "This igneous rock is extremely sharp",
 		"image": "http://www.universetoday.com/wp-content/uploads/2009/05/600px-obsidianoregon.jpg",
 		"reviews":
@@ -93,6 +96,7 @@
     "productID" : "3",
 		"name": "Clothes Iron",
 		"price": "25",
+    "cartQty": "1",
 		"description": "Uses steam to Iron clothes",
 		"image": "http://www.vapor-systems.com/images/products/digital_velocity/reliable-digital-velocity-steam-iron-1.gif",
 		"reviews":
@@ -123,6 +127,7 @@
     "productID" : "4",
 		"name": "Green Iron",
 		"price": "35",
+    "cartQty": "1",
 		"description": "In darkest day, in brightest light, let the Green Iron press all the clothes",
 		"image": "http://d3nevzfk7ii3be.cloudfront.net/igi/uIsF462AVoWKLcMf.large",
 		"reviews":
@@ -153,6 +158,7 @@
     "productID" : "5",
 		"name": "Dwayne Johnson",
 		"price": "45",
+    "cartQty": "1",
 		"description": "A good cook",
 		"image": "http://www.nerdist.com/wp-content/uploads/2015/06/Dwayne-Johnson.jpg",
 		"reviews":

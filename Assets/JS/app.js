@@ -1,4 +1,7 @@
 // Define an angular module for our app
+
+var shoppingCart = {};
+
 var storeApp = angular.module('storeApp', ['ngRoute']);
 
 // Routing

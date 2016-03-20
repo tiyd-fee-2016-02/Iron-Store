@@ -30,11 +30,19 @@ storeApp.controller('CartViewController', ['$scope','$http', '$routeParams', fun
 			.success(function (data) {
 				console.log("Success! => CartViewController", data);
 				$scope.products = data;
+			console.log($scope.products[$routeParams.productID]);
 				$scope.productID = $routeParams.productID;
+			console.log("$scope.productID => " + $scope.productID);
+				$scope.shoppingCart = [];
+				// $scope.shoppingCart["testKey"] = $scope.products["testVal"];
+				$scope.shoppingCart.push($scope.products[$scope.productID]);
+			console.log("shoppingCart => " + $scope.shoppingCart);
 			})
 	   .error(function (data) {
 	      console.log('There was an error!', data);
 			});
+
+
 	}]);
 
 storeApp.controller('ReceiptViewController', function($scope) {
