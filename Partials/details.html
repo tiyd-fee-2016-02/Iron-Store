@@ -1,23 +1,27 @@
 {{message}}
-  <div class="product-card" ng-model="products">
-  <!-- <div class="product-card" ng-repeat="product in products"> -->
-  <!-- <div class="product-card" ng-repeat="product in products | filter:{'productID': 0}:true}"> -->
-   <div class="product-card-detail-container">
-     <div class="details-image"><img src='{{products[productID].image}}'></div>
-     <div class="details-name">{{products[productID].name}} ({{productID}})</div>
-     <div class="details-price">{{products[productID].price | currency}}</div>
-     <div class="details-description">{{products[productID].description}}</div>
-     <br>
-     <div class="details-reviews" ng-repeat="review in products[productID].reviews">
+<br>
+<h1>Product Details</h1>
+<div class="details-product-card">
+<!-- <div class="product-card" ng-repeat="product in products"> -->
+<!-- <div class="product-card" ng-repeat="product in products | filter:{'productID': 0}:true}"> -->
+ <div class="product-card-detail-container">
+   <div class="details-image"><img src='{{products[productID].image}}'></div>
+   <div class="details-name">{{products[productID].name}} ({{productID}})</div>
+   <div class="details-price">{{products[productID].price | currency}}</div>
+   <div class="details-description">{{products[productID].description}}</div>
+   <br>
+   <div class="details-review-container">
+     <div class="details-review-wrapper" ng-repeat="review in products[productID].reviews">
        <br>
-       <div>{{review.author}}</div>
-       <div>Stars: {{review.rating}}</div>
-       <div>{{review.review}}</div>
+       <div class="details-review-author">{{review.author}}</div>
+       <div class="details-review-stars">Stars: {{review.rating}}</div>
+       <div class="details-review-text">{{review.review}}</div>
      </div>
-     <br>
    </div>
-  </div>
+   <br>
+ </div>
+</div>
+<div class="details-btn-container">
   <a href="#ProductView"><button class="details-back">Back to Items</button></a>
   <a href="#Cart/{{productID}}" ng-click = "addToCart(productID)"><button class="details-card">Add to Cart</button></a>
-    <!-- <a href="#Cart/{{productID}}"><button class="details-card">Add to Cart</button></a> -->
 </div>

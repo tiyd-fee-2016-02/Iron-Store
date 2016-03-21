@@ -27,6 +27,11 @@ body {
   }
 }
 
+h1 {
+  font-size: 1.8em;
+  margin-left: 25px;
+}
+
 //styles for header
 
 header {
@@ -94,8 +99,26 @@ footer {
      height: 100%;
      text-decoration: none;
      color: $font-color;
-    padding: 0;
+     padding: 0;
    }
+}
+
+.details-product-card {
+   border: 1px solid $font-color;
+   border-radius: 10px;
+   width: 40%;
+   min-width: 325px;
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   color: $font-color;
+   margin-top: 20px;
+   margin-left: 25px;
+  //  height: 275px;
+}
+
+.details-btn-container {
+  margin: 25px 0 0 20px;
 }
 
 .details-image {
@@ -194,7 +217,16 @@ footer {
   height: 20px;
 }
 
-h1 {
-  font-size: 1.8em;
-  margin-left: 25px;
+.details-review-container {
+  border: 1px solid $font-color;
+  border-radius: 5px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.details-review-wrapper {
+  border: 1px dashed red;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
 }

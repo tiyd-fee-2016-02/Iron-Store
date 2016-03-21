@@ -12,6 +12,10 @@ body .nav-links:hover {
 body a {
   padding: 0 0.5em; }
 
+h1 {
+  font-size: 1.8em;
+  margin-left: 25px; }
+
 header {
   font-size: 2em;
   text-align: center;
@@ -60,6 +64,21 @@ footer {
     text-decoration: none;
     color: #22313F;
     padding: 0; }
+
+.details-product-card {
+  border: 1px solid #22313F;
+  border-radius: 10px;
+  width: 40%;
+  min-width: 325px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #22313F;
+  margin-top: 20px;
+  margin-left: 25px; }
+
+.details-btn-container {
+  margin: 25px 0 0 20px; }
 
 .details-image img {
   width: 150px;
@@ -130,8 +149,16 @@ footer {
   width: 40px;
   height: 20px; }
 
-h1 {
-  font-size: 1.8em;
-  margin-left: 25px; }
+.details-review-container {
+  border: 1px solid #22313F;
+  border-radius: 5px;
+  height: 200px;
+  overflow: scroll; }
+
+.details-review-wrapper {
+  border: 1px dashed red;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */
