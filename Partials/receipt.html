@@ -1,6 +1,11 @@
-<h1 class = "receipt">Receipt</h1>
-{{message}}
-<!-- <div class = "details-name">{{name}}</div>
-<div class = "detials-price">{{price | currency}}</div>
-<div class = "details-description">{{description}}</div>
-<div class = "details-reviews">{{reviews}}</div> -->
+{{message}}<!-- test msg -->
+<br>
+<h1>Receipt</h1>
+<br>
+<div class="receipt">Sub Total: {{subTotal | currency}}</div>
+<br>
+<div class="receipt">Sales Tax: {{salesTax| currency}}</div>
+<br>
+<div class="receipt">Shipping: {{shipping | currency}}</div>
+<br>
+<div class="receipt">Total: {{totalPrice | currency}}</div>

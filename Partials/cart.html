@@ -1,14 +1,18 @@
-{{message}}
+{{message}}<!-- test messagae -->
 <br>
 <h1>Shopping Cart</h1>
-<ul class="cart-item-container">
-   <li class="cart-item" ng-repeat = "item in shoppingCart">
-      <span class="cart-quantity"><input name="cart-product-quantity-{{productID}}" value="{{item.cartQty}}" type="text" placeholder="Qty" size="3" maxlength="3"></input></span>
+<ul class="cart-item-container" ng-controller="CartViewController">
+   <li class="cart-item" ng-repeat="item in shoppingCart">
+      <span class="cart-quantity"><input name="cart-product-quantity-{{item.productID}}" value="{{item.cartQty}}" type="text" placeholder="Qty" size="3" maxlength="3"></input></span>
       <span class="cart-image"><img src='{{item.image}}'></span>
-      <span class="cart-name">{{item.name}} ({{productID}})</span>
+      <span class="cart-name">{{item.name}} ({{item.productID}})</span>
       <div class="cart-description">{{item.description}}</div>
       <span class="cart-price">{{item.price | currency}}</span>
-      <span class="cart-update-btn-wrapper"><a href="#Cart/Update/{{productID}}"><button name="cart-update-btn-{{productID}}" class="cart-update-btn">Update</button></a></span>
-      <span class="cart-remove-btn-wrapper"><a href="#Cart/Remove/{{productID}}"><button name="cart-remove-btn-{{productID}}" class="cart-remove-btn">Remove</button></a></span>
+      <span class="cart-update-btn-wrapper"><button ng-click="updateCartItem(productID, 1)" name="cart-update-btn-{{item.productID}}" class="cart-update-btn">Update</button></span>
+      <span class="cart-remove-btn-wrapper"><button ng-click="removeCartItem(productID)" name="cart-remove-btn-{{item.productID}}" class="cart-remove-btn">Remove</button></span>
    </li>
 </ul>
+<div class="cart-btn-container">
+  <a href="#ProductView"><button class="">Continue Shopping</button></a>
+  <a href="#Receipt"><button class="">Checkout</button></a>
+</div>

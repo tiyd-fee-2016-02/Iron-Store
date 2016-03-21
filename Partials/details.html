@@ -1,4 +1,4 @@
-{{message}}
+{{message}}<!-- test messagae -->
 <br>
 <h1>Product Details</h1>
 <div class="details-product-card">
@@ -11,17 +11,26 @@
    <div class="details-description">{{products[productID].description}}</div>
    <br>
    <div class="details-review-container">
-     <div class="details-review-wrapper" ng-repeat="review in products[productID].reviews">
-       <br>
-       <div class="details-review-author">{{review.author}}</div>
-       <div class="details-review-stars">Stars: {{review.rating}}</div>
-       <div class="details-review-text">{{review.review}}</div>
-     </div>
+     <ul class="details-review-wrapper" ng-repeat="review in products[productID].reviews">
+       <li class="details-review-data-wrapper">
+         <div class="details-review-author">Author:</div>
+         <div> {{review.author}}</div>
+       </li>
+       <li class="details-review-data-wrapper">
+         <div class="details-review-rating">Rating:</div>
+         <div> {{review.rating}} Stars</div>
+       </li>
+       <li class="details-review-data-wrapper">
+         <div class="details-review-text">Review:</div>
+         <br>
+         <div>{{review.review}}</div>
+       </li>
+     </ul>
    </div>
    <br>
  </div>
 </div>
 <div class="details-btn-container">
   <a href="#ProductView"><button class="details-back">Back to Items</button></a>
-  <a href="#Cart/{{productID}}" ng-click = "addToCart(productID)"><button class="details-card">Add to Cart</button></a>
+  <a href="#Cart/{{productID}}" ><button class="details-card">Add to Cart</button></a>
 </div>

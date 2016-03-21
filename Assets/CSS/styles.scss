@@ -5,7 +5,7 @@ $secondary-color: #E74C3C;
 $font-color: #22313F;
 $cart-right-padding: 2em;
 
-//Styles for all the content:
+// Styles for all the content:
 
 html {
    font-family: $font-family;
@@ -60,20 +60,18 @@ footer {
    display: flex;
    justify-content: space-between;
    margin-top: 25px;
-   .right-nav{
-
-   }
-   .left-nav {
-
-   }
-
+  //  .right-nav{
+   //
+  //  }
+  //  .left-nav {
+   //
+  //  }
 }
 
-// styling for product-view page:
+// styling for products page:
 
 .column-container {
    margin: auto;
-  //  margin-left: 10%;
    display: inline-block;
 }
 
@@ -102,6 +100,8 @@ footer {
      padding: 0;
    }
 }
+
+// styling for product details page
 
 .details-product-card {
    border: 1px solid $font-color;
@@ -150,19 +150,61 @@ footer {
   text-align: left;
 }
 
-// cart styles
+.details-review-container {
+  border: 1px solid $font-color;
+  border-radius: 5px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.details-review-wrapper {
+  border-bottom: 1px solid $font-color;
+  padding: 10px 0;
+  margin: 0 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.details-review-author,
+.details-review-rating,
+.details-review-text {
+  font-weight: bold;
+  color: $primary-color;
+  height: 18px;
+  width: 65px;
+  // border: 1px dashed red;
+}
+
+.details-review-data-wrapper,
+.details-review-data-wrapper div,
+.details-review-data-wrapper .details-review-author,
+.details-review-data-wrapper .details-review-rating {
+  display: inline-block;
+  // border: 1px dashed red;
+}
+
+.details-review-data-wrapper {
+  width: 100%;
+}
+
+.details-review-text {
+  overflow: scroll;
+  vertical-align: middle;
+}
+
+// styling for shopping cart
 
 @mixin padding-right($value) {
   padding-right: $value;
   vertical-align: middle;
 }
 
-.cart-item-container {
-  // border: 1px solid $font-color;
-  // border-radius: 10px;
-  // margin: 25px 0 0 25px;
-  // padding: 5px;
-}
+// .cart-item-container {
+//   border: 1px solid $font-color;
+//   border-radius: 10px;
+//   margin: 25px 0 0 25px;
+//   padding: 5px;
+// }
 
 .cart-item {
   // display: inline-block;
@@ -206,7 +248,7 @@ footer {
   margin: 0.25em auto 0 auto;
   width: 300px;
   height: 30px;
-  text-align: left;
+  text-align: top;
 }
 
 .cart-price {
@@ -217,16 +259,10 @@ footer {
   height: 20px;
 }
 
-.details-review-container {
-  border: 1px solid $font-color;
-  border-radius: 5px;
-  height: 200px;
-  overflow: scroll;
+.cart-btn-container {
+  margin: 25px 0 0 20px;
 }
 
-.details-review-wrapper {
-  border: 1px dashed red;
-  padding: 10px;
-  text-align: left;
-  vertical-align: middle;
+.receipt {
+  margin-left: 25px;
 }

@@ -27,14 +27,14 @@ storeApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'Partials/cart.html',
       controller: 'CartViewController'
     })
-    .when('/Cart/Update/:productID', {
-      templateUrl: 'Partials/cart.html',
-      controller: 'CartViewController'
-    })
-    .when('/Cart/Remove/:productID', {
-      templateUrl: 'Partials/cart.html',
-      controller: 'CartViewController'
-    })
+    // .when('/Cart/Update/:productID', {
+    //   templateUrl: 'Partials/cart.html',
+    //   controller: 'CartViewController'
+    // })
+    // .when('/Cart/Remove/:productID', {
+    //   templateUrl: 'Partials/cart.html',
+    //   controller: 'CartViewController'
+    // })
     .when('/Receipt', {
       templateUrl: 'Partials/receipt.html',
       controller: 'ReceiptViewController'
