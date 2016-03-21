@@ -83,10 +83,10 @@ footer {
   height: 30px;
   text-align: left; }
 
-.cart-product-container {
+.cart-item {
   border: 1px solid #22313F;
   border-radius: 10px;
-  margin: 25px 0 0 25px;
+  margin: 20px 0 0 25px;
   padding: 5px; }
 
 .cart-image {
@@ -108,7 +108,9 @@ footer {
 .cart-name {
   padding-right: 2em;
   vertical-align: middle;
-  display: inline-block; }
+  display: inline-block;
+  width: 150px;
+  height: 16px; }
 
 .cart-description {
   padding-right: 2em;
@@ -122,8 +124,14 @@ footer {
   text-align: left; }
 
 .cart-price {
-  display: inline-block;
   padding-right: 2em;
-  vertical-align: middle; }
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+  height: 20px; }
+
+h1 {
+  font-size: 1.8em;
+  margin-left: 25px; }
 
 /*# sourceMappingURL=styles.css.map */

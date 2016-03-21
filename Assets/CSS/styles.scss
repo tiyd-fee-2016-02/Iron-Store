@@ -134,15 +134,19 @@ footer {
   vertical-align: middle;
 }
 
-.cart-product-container {
-  border: 1px solid $font-color;
-  border-radius: 10px;
-  margin: 25px 0 0 25px;
-  padding: 5px;
+.cart-item-container {
+  // border: 1px solid $font-color;
+  // border-radius: 10px;
+  // margin: 25px 0 0 25px;
+  // padding: 5px;
 }
 
-.cart-product {
+.cart-item {
   // display: inline-block;
+  border: 1px solid $font-color;
+  border-radius: 10px;
+  margin: 20px 0 0 25px;
+  padding: 5px;
 }
 
 .cart-image {
@@ -165,6 +169,9 @@ footer {
 .cart-name {
   @include padding-right($cart-right-padding);
   display: inline-block;
+  // border: 1px dashed red;
+  width: 150px;
+  height: 16px;
 }
 
 .cart-description {
@@ -180,6 +187,14 @@ footer {
 }
 
 .cart-price {
-  display: inline-block;
   @include padding-right($cart-right-padding);
+  display: inline-block;
+  // border: 1px dashed red;
+  width: 40px;
+  height: 20px;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-left: 25px;
 }

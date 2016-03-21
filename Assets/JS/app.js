@@ -1,7 +1,4 @@
-// Define an angular module for our app
-
-var shoppingCart = {};
-
+// Define an angular module for app
 var storeApp = angular.module('storeApp', ['ngRoute']);
 
 // Routing
@@ -24,7 +21,7 @@ storeApp.config(['$routeProvider', function($routeProvider) {
     })
     .when('/Cart', {
       templateUrl: 'Partials/cart.html',
-      controller: 'CartViewController'
+      controller: 'CartViewController',
     })
     .when('/Cart/:productID', {
       templateUrl: 'Partials/cart.html',
